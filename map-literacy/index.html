@@ -1,10 +1,309 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>地図リテラシー入門</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr {
+            border: 1px solid #bbb;
+        }
+        th, td {
+            border-right: 1px solid #bbb;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        th {
+            background-color: #E2EFDA;
+        }
+        td:not(:first-child) {
+            text-align: right;
+        }
+    </style>
   </head>
   <body>
     <h1>GISで学ぶ主題図作成のための地図リテラシー</h1>
-    <p>Hello GIS World!</p>
+<table border="0" cellpadding="0" cellspacing="0" width="4275" style="border-collapse:
+ collapse;table-layout:fixed;width:3207pt">
+ <colgroup><col class="xl65" width="172" style="mso-width-source:userset;mso-width-alt:5504;
+ width:129pt">
+ <col class="xl65" width="237" span="2" style="mso-width-source:userset;mso-width-alt:
+ 7584;width:178pt">
+ <col class="xl65" width="309" style="mso-width-source:userset;mso-width-alt:9888;
+ width:232pt">
+ <col width="440" style="mso-width-source:userset;mso-width-alt:14080;width:330pt">
+ <col width="72" span="40" style="width:54pt">
+ </colgroup><tbody><tr height="25" style="height:18.75pt">
+  <td height="25" class="xl65" width="172" style="height:18.75pt;width:129pt;
+  font-size:11.0pt;color:white;font-weight:700;text-decoration:none;text-underline-style:
+  none;text-line-through:none;font-family:游ゴシック, sans-serif;mso-font-charset:
+  128;border-top:.5pt solid #8EA9DB;border-right:none;border-bottom:.5pt solid #8EA9DB;
+  border-left:.5pt solid #8EA9DB;background:#4472C4;mso-pattern:#4472C4 none"><ruby>章<span style="display:none"><rt>ショウ</rt></span></ruby></td>
+  <td class="xl65" width="237" style="width:178pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#4472C4;mso-pattern:#4472C4 none">タイトル</td>
+  <td class="xl65" width="237" style="width:178pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#4472C4;mso-pattern:#4472C4 none"><ruby>解説<span style="display:
+  none"><rt>カイセツ</rt></span></ruby></td>
+  <td class="xl65" width="309" style="width:232pt;font-size:11.0pt;color:white;
+  font-weight:700;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:.5pt solid #8EA9DB;border-bottom:.5pt solid #8EA9DB;border-left:
+  none;background:#4472C4;mso-pattern:#4472C4 none">URL</td>
+  <td width="440" style="width:330pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+ </tr>
+ <tr height="25" style="height:18.75pt">
+  <td height="25" class="xl65" style="height:18.75pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:.5pt solid #8EA9DB;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none">イントロダクション</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none">ESRIジャパン</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none"></td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:.5pt solid #8EA9DB;border-bottom:.5pt solid #8EA9DB;border-left:
+  none;background:#D9E1F2;mso-pattern:#D9E1F2 none">https://www.esrij.com/</td>
+  <td colspan="41" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="25" style="height:18.75pt">
+  <td height="25" class="xl65" style="height:18.75pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:.5pt solid #8EA9DB">イントロダクション</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none">Esri</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none"></td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:.5pt solid #8EA9DB;border-bottom:.5pt solid #8EA9DB;border-left:
+  none">https://www.esri.com/</td>
+  <td colspan="41" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="25" style="height:18.75pt">
+  <td height="25" class="xl65" style="height:18.75pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:.5pt solid #8EA9DB;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none">イントロダクション</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none"><ruby>自己<span style="display:
+  none"><rt>ジコ</rt></span></ruby><ruby>紹介<span style="display:none"><rt>ショウカイ</rt></span></ruby>（ストーリーマップ）</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none"></td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:.5pt solid #8EA9DB;border-bottom:.5pt solid #8EA9DB;border-left:
+  none;background:#D9E1F2;mso-pattern:#D9E1F2 none">https://arcg.is/Kohsuke_Hada</td>
+  <td colspan="41" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="25" style="height:18.75pt">
+  <td height="25" class="xl65" style="height:18.75pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:.5pt solid #8EA9DB">球面上の世界</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none">Google
+  Earth（Web 版）</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none"><ruby>緯線<span style="display:none"><rt>イセン</rt></span></ruby>・<ruby>経線<span style="display:none"><rt>ケイセン</rt></span></ruby>の<ruby>確認<span style="display:none"><rt>カクニン</rt></span></ruby></td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:.5pt solid #8EA9DB;border-bottom:.5pt solid #8EA9DB;border-left:
+  none">https://earth.google.com/</td>
+  <td colspan="41" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="25" style="height:18.75pt">
+  <td height="25" class="xl65" style="height:18.75pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:.5pt solid #8EA9DB;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none">球面上の世界</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none">デジタル<ruby>地球儀<span style="display:none"><rt>チキュウギ</rt></span></ruby></td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none"><ruby>緯線<span style="display:
+  none"><rt>イセン</rt></span></ruby>・<ruby>経線<span style="display:none"><rt>ケイセン</rt></span></ruby>・<ruby>時差<span style="display:none"><rt>ジサ</rt></span></ruby></td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:.5pt solid #8EA9DB;border-bottom:.5pt solid #8EA9DB;border-left:
+  none;background:#D9E1F2;mso-pattern:#D9E1F2 none">https://arcg.is/0bSCL51</td>
+  <td colspan="41" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="25" style="height:18.75pt">
+  <td height="25" class="xl65" style="height:18.75pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:.5pt solid #8EA9DB">主題図</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none">世界の夜間光</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none">NASA</td>
+  <td class="xl65" colspan="42" style="mso-ignore:colspan;font-size:11.0pt;
+  color:black;font-weight:400;text-decoration:none;text-underline-style:none;
+  text-line-through:none;font-family:游ゴシック, sans-serif;mso-font-charset:128;
+  border-top:.5pt solid #8EA9DB;border-right:.5pt solid #8EA9DB;border-bottom:
+  .5pt solid #8EA9DB;border-left:none">https://worldview.earthdata.nasa.gov/?v=-55.811908680135005,-14.90951146627846,225.31769324541006,113.9415560829297&amp;l=Reference_Labels_15m(hidden),Reference_Features_15m(hidden),Coastlines_15m(hidden),VIIRS_SNPP_DayNightBand_ENCC(hidden),VIIRS_Night_Lights(hidden),VIIRS_SNPP_CorrectedReflectance_TrueColor(hidden),MODIS_Aqua_CorrectedReflectance_TrueColor(hidden),MODIS_Terra_CorrectedReflectance_TrueColor(hidden),VIIRS_Black_Marble&amp;lg=false&amp;t=2016-12-08-T00%3A00%3A00Z</td>
+ </tr>
+ <tr height="25" style="height:18.75pt">
+  <td height="25" class="xl65" style="height:18.75pt;font-size:11.0pt;color:black;
+  font-weight:400;text-decoration:none;text-underline-style:none;text-line-through:
+  none;font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:.5pt solid #8EA9DB;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none">主題図</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none">ColorBrewer</td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:none;border-bottom:.5pt solid #8EA9DB;border-left:none;
+  background:#D9E1F2;mso-pattern:#D9E1F2 none"><ruby>配色<span style="display:
+  none"><rt>ハイショク</rt></span></ruby></td>
+  <td class="xl65" style="font-size:11.0pt;color:black;font-weight:400;
+  text-decoration:none;text-underline-style:none;text-line-through:none;
+  font-family:游ゴシック, sans-serif;mso-font-charset:128;border-top:.5pt solid #8EA9DB;
+  border-right:.5pt solid #8EA9DB;border-bottom:.5pt solid #8EA9DB;border-left:
+  none;background:#D9E1F2;mso-pattern:#D9E1F2 none">https://colorbrewer2.org/</td>
+  <td colspan="41" style="mso-ignore:colspan"></td>
+ </tr>
+ <!--[if supportMisalignedColumns]-->
+ <tr height="0" style="display:none">
+  <td width="172" style="width:129pt"></td>
+  <td width="237" style="width:178pt"></td>
+  <td width="237" style="width:178pt"></td>
+  <td width="309" style="width:232pt"></td>
+  <td width="440" style="width:330pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+  <td width="72" style="width:54pt"></td>
+ </tr>
+ <!--[endif]-->
+</tbody></table>
   </body>
 </html>
